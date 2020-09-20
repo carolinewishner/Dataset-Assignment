@@ -3,7 +3,11 @@ subtitle: "Dataset Assignment Report"
 author: "Caroline Wishner"
 
 ## Introduction
-I was given a dataset based on a study on humans exploring a connection between height, weight and other variables with hypertension. Hypertension, also known as high blood pressure, is condition in which the force of the blood against the artery walls is too high. It is very common with over 3 million US cases per year. Hypertension is usually defined as blood pressure above 140/90, and is considered severe if the pressure is above 180/120. While high blood pressure often has no symptoms, if untreated, it can cause health conditions overtime, such as heart disease and stroke. This paper aims to derive any correlation from the presented data.
+I was given a dataset based on a study on humans exploring a connection between height, weight and other variables with hypertension. 
+Hypertension, also known as high blood pressure, is condition in which the force of the blood against the artery walls is too high. It is 
+very common with over 3 million US cases per year. Hypertension is usually defined as blood pressure above 140/90, and is considered severe if the 
+pressure is above 180/120. While high blood pressure often has no symptoms, if untreated, it can cause health conditions overtime, such as heart di
+sease and stroke. This paper aims to derive any correlation from the presented data.
 
 ## Specific Aims
 1. Utilize the data in order to find some correlation between the variables
