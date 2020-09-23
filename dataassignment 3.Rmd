@@ -58,9 +58,9 @@ plot(caroline.dataset$bmi, caroline.dataset$diastolic)
 
 
 ```{r}
-plot(BMI ~ systolic, data= caroline.dataset)
+plot(bmi ~ systolic, data=caroline.dataset)
 
-regrline <- lm(BMI ~ systolic, data= caroline.dataset)
+regrline <- lm(bmi ~ systolic, data=caroline.dataset)
 
 abline(regrline, lwd=3, col='red')
 
@@ -69,9 +69,9 @@ summary (regrline)
 
 
 ```{r}
-plot(BMI ~ diastolic, caroline.dataset)
+plot(bmi ~ diastolic, caroline.dataset)
 
-regrline <- lm(BMI ~ diastolic, caroline.dataset)
+regrline <- lm(bmi ~ diastolic, caroline.dataset)
 
 abline(regrline, lwd=3, col='red')
 
@@ -82,7 +82,7 @@ summary (regrline)
 
 ##Conclusion
 
-In conclusion, I can note that BMI is positively associated with systolic blood pressure and diastolic blood pressure. It appears to be casually associated.
+In conclusion, I can note that BMI is positively associated with systolic blood pressure and diastolic blood pressure. So, it appears to be casually associated.
 
 
 
