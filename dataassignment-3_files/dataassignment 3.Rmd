@@ -1,0 +1,87 @@
+---
+title: 'final data assignment'
+author: "caroline wishner"
+date: "9/22/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+caroline.dataset <- read.csv("caroline-dataset.csv")
+```
+
+## Introduction
+
+I was given a dataset based on a study on humans exploring a connection between height, weight and other variables with hypertension. Hypertension, also known as high blood pressure, is condition in which the force of the blood against the artery walls is too high. It is very common with over 3 million US cases per year. Hypertension is usually defined as blood pressure above 140/90, and is considered severe if the pressure is above 180/120. While high blood pressure often has no symptoms, if untreated, it can cause health conditions overtime, such as heart disease and stroke. This paper aims to derive any correlation from the presented data.
+
+  
+## Specific Aims
+
+1. Utilize the data in order to find some correlation between the variables" 
+
+2. Identify and validate the most relevant prediction tool(s) for predicting the risk of developing Hypertension"
+  
+## Data Representation/Descriptive Stats
+
+"The dataset has the following variables and this is what they mean:
+
+id: Person Identifier
+
+age: Age of the subject
+
+gender: Gender of the subject
+
+height: Height in centimeters
+
+weight: Weight in kilograms
+
+bmi: The calculated body mass index
+
+systolic: Systolic BP at the time of measurement
+
+diastolic: Diastolic BP at the time of measurement
+  
+```{r}
+summary(caroline.dataset)
+```
+
+  
+  Write up of descriptive statistics of the major variables with a  models relating BMI with systolic BP and a model relating BMI with diastolic BP."
+  
+```{r}
+plot(caroline.dataset$bmi, caroline.dataset$systolic)
+```
+```{r}
+plot(caroline.dataset$bmi, caroline.dataset$diastolic)
+```
+
+
+
+```{r}
+plot(BMI ~ systolic, caroline.dataset)
+
+regrline <- lm(BMI ~ systolic, caroline.dataset)
+
+abline(regrline, lwd=3, col='red')
+
+summary (regrline)
+```
+
+
+```{r}
+plot(BMI ~ diastolic, caroline.dataset)
+
+regrline <- lm(BMI ~ diastolic, caroline.dataset)
+
+abline(regrline, lwd=3, col='red')
+
+summary (regrline)
+```
+
+
+
+##Conclusion
+
+In conclusion, I can note that BMI is positively associated with systolic blood pressure and diastolic blood pressure. It appears to be casually associated.
+
+  
