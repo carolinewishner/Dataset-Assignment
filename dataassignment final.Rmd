@@ -82,7 +82,7 @@ summary (regrline)
 
 ##Conclusion
 
-In conclusion, I can note that BMI is positively associated with systolic blood pressure and diastolic blood pressure. So, it appears to be casually associated.
+In conclusion, I can note that BMI is positively associated with systolic blood pressure and diastolic blood pressure. It appears to be casually associated.
 
 
 
